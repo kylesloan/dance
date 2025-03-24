@@ -1,9 +1,10 @@
 ---
 config:
   theme: redux
+  layout: fixed
 ---
 flowchart LR
-    basic("Basic") --> rightPass("Right Side Pass") & basicWithOutside("Basic Outside Turn") & crossWeave("Cross Weave") & crossCheck("Cross Check") & rightTurn("Right Turn")
+    basic("Basic") --> rightPass("Side Pass") & basicWithOutside("Basic Outside Turn") & crossWeave("Cross Weave") & crossCheck("Cross Check") & rightTurn("Right Turn")
     rightPass --> insideTurn("Inside Turn") & sweetHeart(["Sweet Heart"]) & waistWrap("Waist Wrap") & hammerlockPass("Hammer Lock Pass")
     LeftTurn("Left Turn (8C)") --> waistWrap
     sweetHeart --> tickTock("Tick Tock") & leftTickTock("Left Tick Tock") & sweetHeartRightTurn("Sweet Heart Right Turn")
@@ -11,10 +12,42 @@ flowchart LR
     tickTock --> waistWrap & freeSpin("Free Spin") & sweetHeart
     leftTickTock --> sweetHeart
     sweetHeartRightTurn --> hammerLock("Hammer Lock") & wristIllisionSpin("Wrist Illision Spin") & lariat("Lariat")
-    lariat --> lariat & manNeckDrape("Man Neck Drape")
+    lariat --> lariat & manNeckDrape("Man Neck Drape") & doubleLariat("Double Spin Lariat")
     crossCheck --> pattyCake("Patty Cake")
-    pattyCake --> pattyCake & insideTurn & insideTurnRightHand("Inside Turn Right Hand")
+    pattyCake --> insideTurn & insideTurnRightHand("Inside Turn Right Hand")
     insideTurnRightHand --> sweetHeart
     rightTurn --> neckWrap("Neck Wrap")
-    lariat --> doubleLariat("Double Spin Lariat")
+    neckWrap --> freeSpin
     doubleLariat --> lariat
+    classDef beginner fill:#00C853
+    classDef intermediate fill:#FFD600
+    classDef advanced fill:#FF6D00
+     basic:::beginner
+     wristIllisionSpin:::advanced
+     pattyCake:::intermediate
+    rightPass:::beginner
+    basicWithOutside:::beginner
+    crossWeave:::beginner
+    crossCheck:::beginner
+    rightTurn:::beginner
+    insideTurn:::beginner
+    sweetHeart:::beginner
+    waistWrap:::intermediate
+    LeftTurn:::intermediate
+    tickTock:::beginner
+    leftTickTock:::intermediate
+    sweetHeartRightTurn:::intermediate
+    basicInWaisteWrap:::intermediate
+    doubleOverWaistWrap:::intermediate
+    freeSpin:::beginner
+    wristIllisionSpin:::advanced
+    lariat:::intermediate
+    manNeckDrape:::beginner
+    doubleLariat:::advanced
+    pattyCake:::intermediate
+    insideTurnRightHand:::intermediate
+    neckWrap:::intermediate
+    click basic "https://youtu.be/uuuLUbVpjVU?si=mTnhblPNEH_ZZcy_&t=32"
+    click rightPass "https://youtu.be/Y8nmx1pFYyM?si=9LYRCpg1-76PkO0f&t=251"
+    click rightTurn "https://youtu.be/qurWFVOkFSE?si=KayUgZWIEPeQXK4w&t=126"
+
