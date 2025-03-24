@@ -1,0 +1,20 @@
+---
+config:
+  theme: redux
+---
+flowchart LR
+    basic("Basic") --> rightPass("Right Side Pass") & basicWithOutside("Basic Outside Turn") & crossWeave("Cross Weave") & crossCheck("Cross Check") & rightTurn("Right Turn")
+    rightPass --> insideTurn("Inside Turn") & sweetHeart(["Sweet Heart"]) & waistWrap("Waist Wrap") & hammerlockPass("Hammer Lock Pass")
+    LeftTurn("Left Turn (8C)") --> waistWrap
+    sweetHeart --> tickTock("Tick Tock") & leftTickTock("Left Tick Tock") & sweetHeartRightTurn("Sweet Heart Right Turn")
+    waistWrap --> basicInWaisteWrap("Basic in Waist Wrap") & rightTurnWaistWrap("Right Turn Waist Wrap") & doubleOverWaistWrap("Double Over Waist Wrap")
+    tickTock --> waistWrap & freeSpin("Free Spin") & sweetHeart
+    leftTickTock --> sweetHeart
+    sweetHeartRightTurn --> hammerLock("Hammer Lock") & wristIllisionSpin("Wrist Illision Spin") & lariat("Lariat")
+    lariat --> lariat & manNeckDrape("Man Neck Drape")
+    crossCheck --> pattyCake("Patty Cake")
+    pattyCake --> pattyCake & insideTurn & insideTurnRightHand("Inside Turn Right Hand")
+    insideTurnRightHand --> sweetHeart
+    rightTurn --> neckWrap("Neck Wrap")
+    lariat --> doubleLariat("Double Spin Lariat")
+    doubleLariat --> lariat
